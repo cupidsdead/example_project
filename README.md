@@ -112,19 +112,18 @@ In [1]:
 
 #### Automatic Loading of Environment Variables
 
-Pipenv will automatically pick-up and load any environment variables 
-declared in the `.env` file, located in the package's root directory. 
+Pipenv will automatically pickup any environment variables 
+declared in the `.env` file, located in root directory. 
 For example, adding,
 
 ```bash
 DILLY=VANILLY
 ```
 
-Will enable access to this variable within any Python program, 
-via a call to `os.environ['SPARK_HOME']`. 
-Note, that if any security credentials are placed here, 
-then this file **must** be removed from source control - 
-i.e. add `.env` to the `.gitignore` file to prevent potential security risks.
+Will enable access to this variable from python
+```python
+os.environ['DILLY']
+```
 
 ### Running Unit Tests
 
