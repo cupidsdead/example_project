@@ -154,8 +154,6 @@ And [black](https://black.readthedocs.io/en/stable/) for formatting.
 And you can use [pre-commit](https://pre-commit.com/) to hook it all up (incl docs)
 so you never have to actually do anything manually by hand. 
 
-At work I have mandated pre-commit, flake8, black etc as a mandatory SDLC.
-
 ### Static Type Checking
 
 I think this is very useful. Think of all the times we said ah it might break some import
